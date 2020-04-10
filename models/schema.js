@@ -7,7 +7,7 @@ const userSchema=new Schema({
     password:{type:String},
     //category:{type:String},
     resetPasswordToken:{type:String},
-    resetPasswordExpires:{type:Date}
+    resetPasswordExpires:{type:Number}
 
 })
 

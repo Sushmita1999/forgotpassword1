@@ -32,15 +32,15 @@ router.post("/forgot",async(req,res)=>
                 port:587,
                 secure:false,
                 auth:{
-                    user:'vhgsvcgh@gmail.com',
-                    pass:'djncjdbdhbc'
+                    user:'sushmitashetty2017@gmail.com',
+                    pass:'goodluck123'
                 },
                 tls:{rejectUnauthorized:false
                 }
             })
             console.log("transporter is also done");
             const mailoptions={
-                from:"vhgsvcgh@gmail.com",
+                from:"sushmitashetty2017@gmail.com",
                 to:`${emailid.email}`,
                 subject:"Link to Reset Password",
                 text:`http://localhost:3000/reset/${token}\n\n`,
@@ -53,6 +53,7 @@ router.post("/forgot",async(req,res)=>
                 }else{
                     console.log("Here is a response",res);
                     res.status(200).json("recovery mail sent");
+                    res.json({key:"mailsent"});
                 }
             })
             console.log("mail sent !!!!!")

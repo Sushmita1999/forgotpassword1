@@ -9,6 +9,8 @@ module.exports.emailcheck=async function(emailid){
         console.log(error);
     }
 }
+
+
 module.exports.emailupdate=async function(emailid,token){
     try{
         return await password.findOneAndUpdate({
