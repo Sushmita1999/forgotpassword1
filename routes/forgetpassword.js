@@ -32,8 +32,8 @@ router.post("/forgot",async(req,res)=>
                 port:587,
                 secure:false,
                 auth:{
-                    user:'sushmitashetty2017@gmail.com',
-                    pass:'goodluck123'
+                    user:'hbdhgsd',
+                    pass:'hgdkuysfuyk'
                 },
                 tls:{rejectUnauthorized:false
                 }
