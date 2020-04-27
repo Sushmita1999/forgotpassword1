@@ -40,7 +40,7 @@ router.post("/forgot",async(req,res)=>
             })
             console.log("transporter is also done");
             const mailoptions={
-                from:"sushmitashetty2017@gmail.com",
+                from:"hgaduagufy",
                 to:`${emailid.email}`,
                 subject:"Link to Reset Password",
                 text:`http://localhost:3000/reset/${token}\n\n`,
